@@ -32,7 +32,7 @@ namespace Menu
 		playBttn.setBasicButton({ 80, 80, 80, 255 }/*DARKGRAY*/, "Play");
 		//end
 
-		background = LoadImage("../Resources/Backgrounds/BlueWave.png");
+		background = LoadImage("../Resources/Backgrounds/Forest.png");
 		ImageResize(&background, static_cast<int>(currentScreenConfig.width), static_cast<int>(currentScreenConfig.height));
 		backgroundTex = LoadTextureFromImage(background);
 		UnloadImage(background);
