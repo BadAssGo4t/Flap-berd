@@ -96,7 +96,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Libs\raylib-4.5.0_win32_msvc16\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libs\raylib-4.5.0_win32_msvc16\include;$(SolutionDir)FlappyBird\Game;$(SolutionDir)FlappyBird\Main;$(SolutionDir)FlappyBird\Menu;$(SolutionDir)FlappyBird\Structure(ScreenManager)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -113,7 +113,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Libs\raylib-4.5.0_win32_msvc16\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libs\raylib-4.5.0_win32_msvc16\include;$(SolutionDir)FlappyBird\Game;$(SolutionDir)FlappyBird\Main;$(SolutionDir)FlappyBird\Menu;$(SolutionDir)FlappyBird\Structure(ScreenManager)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,7 +130,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Libs\raylib-4.5.0_win32_msvc16\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libs\raylib-4.5.0_win32_msvc16\include;$(SolutionDir)FlappyBird\Game;$(SolutionDir)FlappyBird\Main;$(SolutionDir)FlappyBird\Menu;$(SolutionDir)FlappyBird\Structure(ScreenManager)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -147,7 +147,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Libs\raylib-4.5.0_win32_msvc16\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libs\raylib-4.5.0_win32_msvc16\include;$(SolutionDir)FlappyBird\Game;$(SolutionDir)FlappyBird\Main;$(SolutionDir)FlappyBird\Menu;$(SolutionDir)FlappyBird\Structure(ScreenManager)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -159,7 +159,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Game\Game.cpp" />
     <ClCompile Include="Main\Main.cpp" />
+    <ClCompile Include="Menu\Menu.cpp" />
+    <ClCompile Include="Structure(ScreenManager)\Screen_Manager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game\Game.h" />
+    <ClInclude Include="Main\Main.h" />
+    <ClInclude Include="Menu\Menu.h" />
+    <ClInclude Include="Structure(ScreenManager)\Buttons.h" />
+    <ClInclude Include="Structure(ScreenManager)\Screen_Manager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
