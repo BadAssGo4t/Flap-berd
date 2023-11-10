@@ -84,7 +84,7 @@ namespace Game
 
         // Draw foreground
         DrawTextureEx(foreground, Vector2{ scrollingFore, 70 }, 0.0f, 2.0f, WHITE);
-        DrawTextureEx(foreground, Vector2{ foreground.width * 2 + scrollingFore, 70 }, 0.0f, 2.0f, WHITE);
+        DrawTextureEx(foreground, Vector2{ foreground.width + scrollingFore, 70 }, 0.0f, 2.0f, WHITE);
 
         DrawText("FlappyBerd!", currentScreenConfig.width/3, 100, 30, LIGHTGRAY);
 

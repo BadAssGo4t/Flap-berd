@@ -21,6 +21,7 @@ namespace ScreenManager
 
 		CloseWindow();
 		Menu::UnloadMenu();
+		Game::UnloadGame();
 		//Unloader::UnloadAll();
 		return 0;
 	}
